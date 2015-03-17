@@ -1,0 +1,58 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+	</style>
+
+	<style name="listItemBlueText">
+		<item name="android:textSize">@dimen/list_item_text_size</item>
+		<item name="android:textColor">@color/standard_blue</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="listItemBlackText" parent="listItemBlueText">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="detailItemLargeBlackText" parent="listItemBlackText">
+		<item name="android:textSize">@dimen/detail_large_text_size</item>
+	</style>
+
+	<style name="buttonStyle">
+		<item name="android:layout_height">24dp</item>
+		<item name="android:textSize">@dimen/button_text_size</item>
+		<item name="android:background">@drawable/button</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+	<style name="secondaryButtonStyle" parent="buttonStyle">
+		<item name="android:background">@drawable/secondary_button</item>
+	</style>
+
+	<style name="dialogStyle" parent="@android:style/Theme.Dialog">
+		<item name="android:colorBackground">@android:color/white</item>
+	</style>
+
+	<style name="styledDialogHeader">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+
+	<style name="listProfileImage">
+		<item name="android:layout_width">@dimen/list_profile_pic_size</item>
+		<item name="android:layout_height">@dimen/list_profile_pic_size</item>
+	</style>
+
+	<style name="detailProfileImage">
+		<item name="android:layout_width">@dimen/detail_profile_pic_size</item>
+		<item name="android:layout_height">@dimen/detail_profile_pic_size</item>
+	</style>
+
+</resources>

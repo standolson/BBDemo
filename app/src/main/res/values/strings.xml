@@ -1,0 +1,38 @@
+<resources>
+
+	<string name="app_name">BB Demo</string>
+
+	<!-- Main list strings -->
+
+	<string name="list_item_name_text">Name: </string>
+	<string name="list_item_age_text">Age: </string>
+	<string name="list_item_height_text">Height: </string>
+	<string name="list_item_weight_text">Weight: </string>
+	<string name="list_item_body_fat_text">Body Fat: </string>
+	<string name="note_button_text">Note</string>
+	<string name="note">Note: </string>
+	<string name="unknown">Unknown</string>
+	<string name="state_country_format">%1$s, %2$s</string>
+	<string name="height_format">%1$d\'%2$d\"</string>
+	<string name="weight_format">%1$5.1f lbs</string>
+	<string name="body_fat_format">%1$4.1f %%</string>
+
+	<!-- Show note dialog strings -->
+
+	<string name="edit_note">Edit Note</string>
+	<string name="dismiss">Dismiss</string>
+
+	<!-- Detail view strings -->
+
+	<string name="edit_note_hint">Enter your note here</string>
+	<string name="clear">Clear</string>
+	<string name="save">Save</string>
+	<string name="note_cleared">Note cleared</string>
+	<string name="note_saved">Note saved</string>
+
+	<!-- Menu strings -->
+
+	<string name="sort_by_user_name">Sort By Username</string>
+	<string name="sort_by_age">Sort By Age</string>
+
+</resources>

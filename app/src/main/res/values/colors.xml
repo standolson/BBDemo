@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="black">@android:color/black</color>
+
+	<color name="standard_blue">@android:color/holo_blue_dark</color>
+	<color name="standard_blue_disabled">@android:color/holo_blue_light</color>
+	<color name="standard_blue_pressed">@android:color/holo_blue_bright</color>
+
+	<color name="standard_green">@android:color/holo_green_dark</color>
+	<color name="standard_green_disabled">@android:color/holo_green_light</color>
+	<color name="standard_green_pressed">#C2D699</color>
+
+	<color name="standard_grey">#aaaaaa</color>
+	<color name="standard_grey_pressed">#888888</color>
+
+</resources>

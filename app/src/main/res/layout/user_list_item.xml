@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="100dp"
+	android:padding="@dimen/standard_view_padding"
+	android:background="@drawable/list_item_background"
+	android:clickable="true" >
+
+	<RelativeLayout
+		android:id="@+id/item_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<ImageView
+			style="@style/listProfileImage"
+			android:id="@+id/profilePic"
+			android:layout_alignParentLeft="true"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/image_placeholder" />
+
+		<LinearLayout
+			android:id="@+id/text_content"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/profilePic"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/name_and_age"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight=".6"
+				android:orientation="horizontal" >
+
+				<LinearLayout
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingRight="@dimen/standard_text_padding" >
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_name_text" />
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_age_text" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/name"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Name Goes Here and here and here and here and here and here and here" />
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/age"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Age Goes Here and here and here and here and here" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/location"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight=".4"
+				android:orientation="vertical">
+
+				<TextView
+					style="@style/listItemBlackText"
+					android:id="@+id/city"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:text="City" />
+
+				<TextView
+					style="@style/listItemBlackText"
+					android:id="@+id/state_and_country"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:text="State, Country" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			style="@style/buttonStyle"
+			android:id="@+id/note_button"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:text="@string/note_button_text"/>
+
+	</RelativeLayout>
+
+	<ProgressBar
+		android:id="@+id/spinner"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone" />
+
+</RelativeLayout>

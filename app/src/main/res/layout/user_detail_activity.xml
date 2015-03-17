@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:id="@+id/username_and_location"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/standard_view_padding"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/standard_view_padding"
+			android:orientation="horizontal" >
+
+			<TextView
+				style="@style/detailItemLargeBlackText"
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:text="Username goes here" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:orientation="vertical" >
+
+				<TextView
+					style="@style/listItemBlackText"
+					android:id="@+id/city"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"
+					android:text="City" />
+
+				<TextView
+					style="@style/listItemBlackText"
+					android:id="@+id/state_and_country"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"
+					android:text="State, Country" />
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/standard_view_padding" >
+
+			<ImageView
+				style="@style/detailProfileImage"
+				android:id="@+id/profilePic"
+				android:layout_alignParentLeft="true"
+				android:layout_marginRight="10dp"
+				android:src="@drawable/image_placeholder" />
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/profilePic"
+				android:orientation="horizontal" >
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight=".4"
+					android:paddingRight="@dimen/standard_text_padding"
+					android:orientation="vertical" >
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_name_text" />
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_age_text" />
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_height_text" />
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_weight_text" />
+
+					<TextView
+						style="@style/listItemBlueText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right"
+						android:text="@string/list_item_body_fat_text" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight=".6"
+					android:orientation="vertical" >
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/realname"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Name Goes Here and here and here and here and here and here and here" />
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/age"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Age Goes Here and here and here and here and here" />
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/height"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Height Goes Here and here and here and here and here" />
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/weight"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Weight Goes Here and here and here and here and here" />
+
+					<TextView
+						style="@style/listItemBlackText"
+						android:id="@+id/body_fat"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Body Fat Goes Here and here and here and here and here" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<TextView
+			style="@style/listItemBlueText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/note" />
+
+		<EditText
+			android:id="@+id/note_edittext"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:lines="5"
+			android:gravity="left|top"
+			android:hint="@string/edit_note_hint"
+			android:textSize="@dimen/edit_text_text_size" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<Button
+				style="@style/buttonStyle"
+				android:id="@+id/clear"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/clear" />
+
+			<Button
+				style="@style/secondaryButtonStyle"
+				android:id="@+id/save"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/save" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
